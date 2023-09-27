@@ -7,7 +7,7 @@ module.exports = (_, argv) => ({
     publicPath:
       argv.mode === "development"
         ? "http://localhost:8081/"
-        : "http://consumer-microfrontend.apps.ocp4.pacosta.com/",
+        : "http://consumer-micro2.apps.ocp4.pacosta.com/",
   },
 
   resolve: {
@@ -50,7 +50,7 @@ module.exports = (_, argv) => ({
         header:
           argv.mode === "development"
             ? "header@http://localhost:8080/remoteEntry.js"
-            : "header@http://header-microfrontend.apps.ocp4.pacosta.com/remoteEntry.js",
+            : "header@http://header-micro2.apps.ocp4.pacosta.com/remoteEntry.js",
       },
       exposes: {},
       shared: {
